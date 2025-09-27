@@ -103,20 +103,21 @@ header.scrolled {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5%;
     position: relative;
+    gap: 3rem;
 }
 
 .logo {
-    display: flex;
-    align-items: flex-start;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
     height: 70px;
-    padding-top: 0.5rem;
-    position: relative;
     z-index: 1;
 }
 
@@ -140,9 +141,7 @@ nav {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    gap: 2.5rem;
 }
 
 .nav-links li {
@@ -199,6 +198,14 @@ nav {
     padding: 0 10%;
     position: relative;
     overflow: hidden;
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    font-weight: 300;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero::before {
