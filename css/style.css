@@ -195,9 +195,10 @@ nav {
 }
 
 .hero p {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     font-size: 1.2rem;
     margin-top: 1rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero::before {
@@ -812,8 +813,14 @@ footer {
 .footer-section p,
 .footer-section h3,
 .footer-section a {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-section::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
