@@ -232,20 +232,20 @@ nav {
     }
 }
 
-.hero h1 {
+.hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     line-height: 1.2;
-    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero p {
-    font-size: 1.3rem;
-    margin-bottom: 2.5rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+.hero-content p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
     max-width: 600px;
-    opacity: 0.95;
 }
 
 /* Buttons */
