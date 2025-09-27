@@ -112,11 +112,10 @@ nav {
 }
 
 .logo {
-    display: flex;
-    align-items: flex-start;
+    position: absolute;
+    left: 5%;
+    top: 10px;
     height: 70px;
-    padding-top: 0.5rem;
-    position: relative;
     z-index: 1;
 }
 
