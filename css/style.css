@@ -86,18 +86,19 @@ ul {
 /* Header & Navigation */
 header {
     background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     z-index: 1000;
-    transition: all 0.3s ease;
-    padding: 1rem 0;
+    transition: var(--transition);
 }
 
-header.scrolled {
+header.scroll-down {
+    transform: translateY(-100%);
+}
+
+header.scroll-up {
+    transform: translateY(0);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,25 +106,27 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.2rem 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+
+.nav-links {
     display: flex;
-    align-items: center;
-    height: 50px; /* Adjust based on your logo's aspect ratio */
-}
-
-.logo-img {
-    height: 100%;
-    width: auto;
-    max-height: 60px; /* Adjust based on your preference */
-    transition: var(--transition);
-}
-
-.logo-img:hover {
-    opacity: 0.9;
+    gap: 2.5rem;
 }
 
 .nav-links a {
@@ -159,16 +162,16 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-bg.jpg') no-repeat center center/cover;
+    min-height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('../img/hero-bg.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
-    text-align: center;
-    color: white;
-    padding: 0 20px;
-    padding-top: 90px; /* Add padding to account for fixed header */
+    text-align: left;
+    color: var(--white);
+    padding: 0 10%;
     position: relative;
     overflow: hidden;
-    min-height: calc(100vh - 90px);
 }
 
 .hero::before {
