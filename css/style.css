@@ -83,9 +83,6 @@ ul {
 }
 
 /* Header & Navigation */
-html {
-    scroll-padding-top: 100px; /* Space for fixed header */
-}
 
 body {
     margin: 0;
