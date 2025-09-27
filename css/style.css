@@ -851,7 +851,7 @@ footer::before {
 
 .footer-section p {
     margin-bottom: 1.5rem;
-    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.7);
     line-height: 1.8;
 }
 
@@ -859,10 +859,13 @@ footer::before {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    list-style: none;
+    padding: 0;
 }
 
-.footer-section ul li a {
-    color: rgba(255, 255, 255, 0.8);
+.footer-section a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
     transition: var(--transition);
     display: inline-block;
     position: relative;
