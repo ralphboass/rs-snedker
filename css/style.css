@@ -83,10 +83,6 @@ ul {
 }
 
 /* Header & Navigation */
-body {
-    padding-top: 80px; /* Add padding to body to account for fixed header */
-}
-
 header {
     background-color: rgba(255, 255, 255, 0.98);
     position: fixed;
@@ -96,7 +92,7 @@ header {
     width: 100%;
     z-index: 1000;
     transition: all 0.3s ease;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,7 +117,7 @@ nav {
     grid-column: 1;
     justify-self: start;
     padding: 0;
-    margin: 0 0 0 -40px; /* Move logo further left */
+    margin: 0;
 }
 
 .logo-img {
@@ -205,7 +201,7 @@ nav {
 }
 
 .hero p {
-    color: rgba(255, 255, 255, 0.75); /* 75% opacity white */
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.4rem;
     margin-top: 1.5rem;
     font-weight: 300;
