@@ -83,12 +83,18 @@ ul {
     padding: 0 20px;
 }
 
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* Header & Navigation */
 header {
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     width: 100%;
-    padding: 10px 0;
+    padding: 0;
     position: relative;
     z-index: 1000;
 }
@@ -109,6 +115,9 @@ nav {
     display: flex;
     align-items: center;
     height: 70px;
+    margin-left: -15px;  /* Move logo to the left */
+    margin-top: 8px;     /* Move logo down slightly */
+    padding: 5px 0;      /* Add some vertical padding */
 }
 
 .logo-img {
