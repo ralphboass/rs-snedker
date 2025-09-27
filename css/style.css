@@ -88,6 +88,8 @@ header {
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     transition: var(--transition);
@@ -162,14 +164,13 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh;
-    min-height: 700px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url('../img/hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-bg.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
-    text-align: left;
-    color: var(--white);
-    padding: 0 10%;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    margin-top: 80px; /* Add margin to account for fixed header */
     position: relative;
     overflow: hidden;
 }
