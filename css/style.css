@@ -90,9 +90,11 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000;
     transition: var(--transition);
+    padding: 1rem 0;
 }
 
 header.scroll-down {
@@ -170,9 +172,10 @@ nav {
     text-align: center;
     color: white;
     padding: 0 20px;
-    margin-top: 80px; /* Add margin to account for fixed header */
+    padding-top: 90px; /* Add padding to account for fixed header */
     position: relative;
     overflow: hidden;
+    min-height: calc(100vh - 90px);
 }
 
 .hero::before {
