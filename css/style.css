@@ -194,6 +194,12 @@ nav {
     overflow: hidden;
 }
 
+.hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -798,15 +804,16 @@ section {
 
 /* Footer */
 footer {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 6rem 0 0;
-    position: relative;
-    overflow: hidden;
+    background-color: var(--dark-color);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 4rem 0 0;
 }
 
-footer::before {
-    content: '';
+.footer-section p,
+.footer-section h3,
+.footer-section a {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
     position: absolute;
     top: 0;
     left: 0;
