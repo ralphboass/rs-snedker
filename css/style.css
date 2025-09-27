@@ -105,27 +105,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    letter-spacing: 1px;
-}
-
-.logo span {
-    color: var(--secondary-color);
-    font-weight: 800;
-}
-
-.nav-links {
     display: flex;
-    gap: 2.5rem;
+    align-items: center;
+    height: 50px; /* Adjust based on your logo's aspect ratio */
+}
+
+.logo-img {
+    height: 100%;
+    width: auto;
+    max-height: 60px; /* Adjust based on your preference */
+    transition: var(--transition);
+}
+
+.logo-img:hover {
+    opacity: 0.9;
 }
 
 .nav-links a {
