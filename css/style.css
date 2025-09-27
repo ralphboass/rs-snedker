@@ -112,14 +112,12 @@ nav {
 }
 
 .logo {
-    display: flex;
-    align-items: flex-start;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     height: 70px;
-    padding: 0.5rem 0 0 1.5rem;
-    position: relative;
     z-index: 1;
-    margin-top: -0.5rem;
-    margin-left: -1rem;
 }
 
 .logo-img {
@@ -237,6 +235,8 @@ nav {
     margin-bottom: 1.5rem;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+    font-weight: 700;
 }
 
 .hero-content p {
