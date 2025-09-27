@@ -112,11 +112,6 @@ nav {
 }
 
 
-
-.logo-img:hover {
-    opacity: 0.9;
-}
-
 /* Desktop Navigation */
 .nav-links {
     display: flex;
