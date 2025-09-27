@@ -102,8 +102,8 @@ header.scrolled {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -113,11 +113,11 @@ nav {
 
 .logo {
     display: flex;
-    align-items: flex-start;  /* Align to top */
+    align-items: flex-start;
     height: 70px;
-    padding-top: 0.5rem;  /* Add space above logo */
-    grid-column: 1;
-    justify-self: start;
+    padding-top: 0.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .logo-img {
@@ -140,7 +140,9 @@ nav {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    grid-column: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links li {
