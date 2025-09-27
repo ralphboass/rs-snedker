@@ -404,7 +404,7 @@ section {
 
 .service-card:hover h3,
 .service-card:hover p {
-    color: var(--white);
+    /* Removed color change to maintain original text color on hover */
 }
 
 /* Projects Section */
