@@ -54,8 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let lastScroll = 0;
     const headerHeight = header.offsetHeight;
     
-    // Add padding to body to account for fixed header
-    document.body.style.paddingTop = headerHeight + 'px';
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
@@ -193,3 +191,23 @@ const yearElement = document.querySelector('.footer-bottom p');
 if (yearElement) {
     yearElement.textContent = yearElement.textContent.replace('2025', currentYear);
 }
+
+// Project Slider
+document.querySelectorAll('.project-slider').forEach(slider => {
+  const slides = slider.querySelectorAll('.slide');
+  let current = 0;
+
+  const showSlide = (index) => {
+    slides.forEach((s, i) => s.classList.toggle('active', i === index));
+  };
+
+  slider.querySelector('.next').addEventListener('click', () => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+
+  slider.querySelector('.prev').addEventListener('click', () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+});

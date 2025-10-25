@@ -33,6 +33,11 @@ body {
     background-color: var(--white);
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
@@ -87,14 +92,13 @@ ul {
 header {
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 1000;
     transition: all 0.3s ease;
-    padding: 1.5rem 0 0.5rem;  /* Added more padding on top for the logo */
+    padding: 1rem 0 1rem;  /* Added more padding on top for the logo */
 }
 
 header.scrolled {
@@ -107,7 +111,6 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 5%;
     position: relative;
 }
 
@@ -492,7 +495,7 @@ section {
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
-    min-height: 400px;
+    max-height: 600px;
     background-color: #f5f5f5; /* Fallback background color */
 }
 
@@ -568,6 +571,7 @@ section {
     position: relative;
 }
 
+
 .contact::before {
     content: '';
     position: absolute;
@@ -592,10 +596,11 @@ section {
 
 .contact-container {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 3rem;
 }
+
 
 .contact-info {
     background: var(--white);
@@ -921,6 +926,10 @@ footer::before {
     gap: 1rem;
 }
 
+.footer-bottom p{
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .legal-links {
     display: flex;
     gap: 1.5rem;
@@ -1201,4 +1210,51 @@ footer::before {
 
 .pb-0 {
     padding-bottom: 0 !important;
+}
+
+.project-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-slider .slide {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.project-slider .slide.active {
+  display: block;
+}
+
+.project-slider img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.project-slider button.prev,
+.project-slider button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+.project-slider button.prev:hover,
+.project-slider button.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.project-slider button.prev {
+  left: 10px;
+}
+
+.project-slider button.next {
+  right: 10px;
 }
