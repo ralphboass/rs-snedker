@@ -321,7 +321,7 @@ section {
 
 /* Services Section */
 .services {
-    padding: 8rem 0;
+    padding: 5rem 0;
     background-color: var(--light-gray);
     position: relative;
 }
@@ -412,7 +412,7 @@ section {
 
 /* Projects Section */
 .projects {
-    padding: 8rem 0;
+    padding: 5rem 0;
     background-color: var(--white);
 }
 
@@ -566,9 +566,17 @@ section {
 
 /* Contact Section */
 .contact {
-    padding: 8rem 0;
+    padding: 4rem 0;
     background-color: var(--white);
     position: relative;
+}
+
+.contact-image {
+    height: 80%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    object-position: center top;
 }
 
 
